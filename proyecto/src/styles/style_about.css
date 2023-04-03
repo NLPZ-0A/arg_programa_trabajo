@@ -1,0 +1,7 @@
+.about__section{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+    background-color:white;
+}
