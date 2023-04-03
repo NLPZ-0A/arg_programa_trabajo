@@ -9,6 +9,7 @@
 
 nav{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     /*padding: 1rem;*/
@@ -18,15 +19,39 @@ nav{
     
 }
 
+.navbar__logo {
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+
+.navbar__logo img{
+    max-width: 60px;
+    max-height: 70px;
+    margin: 3px;
+}
+
+.navbar__logo:hover {
+    margin-top: 30px;
+   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.3));
+}
+
 ul{
     list-style: none;
     padding: 0;
     margin-left: 32px;
     margin-right: 32px;
+    max-width: 30px;
 }
 
 .navbar__item{
     padding-bottom: 55px;
+    transition: all 0.2s;
+}
+
+.navbar__item:hover{
+    padding-bottom: 55px;
+    font-size: 24px;
+    filter: drop-shadow(10px 10px rgba(0, 0, 0, 0.3));
 }
 
 
