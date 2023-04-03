@@ -58,6 +58,14 @@
     right: 34%;
 }*/
 
+@media (max-width: 1290px) {
+    .image__container_welcome img{
+        /*background-size: cover;*/
+        object-position: right;
+        
+    }
+  }
+
 @media (max-width: 1000px) {
     .image__container_welcome img{
         /*background-size: cover;*/
