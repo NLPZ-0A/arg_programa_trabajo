@@ -12,6 +12,32 @@
 
 }
 
+.overlay__text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1000;
+}
+
+.overlay__text h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 96px;
+    color: white;
+    margin: 0;
+}
+
+.overlay__text h2{
+    font-style: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: #020202;
+    margin: 0;
+}
+
 /*.title__section{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
