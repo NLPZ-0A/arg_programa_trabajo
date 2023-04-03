@@ -32,7 +32,7 @@ nav{
 
 .navbar__logo:hover {
     margin-top: 30px;
-   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.2));
 }
 
 ul{
@@ -43,6 +43,10 @@ ul{
     max-width: 30px;
 }
 
+ul li {
+    font-size: 28px;
+}
+
 .navbar__item{
     padding-bottom: 55px;
     transition: all 0.2s;
@@ -51,7 +55,7 @@ ul{
 .navbar__item:hover{
     padding-bottom: 55px;
     font-size: 24px;
-    filter: drop-shadow(10px 10px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(8px 8px 1px rgba(0, 0, 0, 0.4));
 }
 
 
