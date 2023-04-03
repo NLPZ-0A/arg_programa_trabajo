@@ -11,8 +11,19 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    font-size: 16px;
   }
   
+  button {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; /* puedes ajustar el tamaño de la fuente a tu gusto */
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+  }
   /* Sections
      ========================================================================== */
   

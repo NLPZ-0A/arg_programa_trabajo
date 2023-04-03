@@ -1,8 +1,9 @@
 .image__container_welcome img{
-    /*background-size: cover;*/
+    background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
 }
 .image__container_welcome img{
     width: 100vw;
@@ -14,6 +15,7 @@
 
 .overlay__text{
     position: absolute;
+    width: 1000px;
     top: 20%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -23,17 +25,19 @@
 
 .overlay__text h1{
     font-family: 'Roboto', sans-serif;
+    max-width: 1000px;
     font-weight: bold;
-    font-size: 96px;
+    font-size: 6rem;
     color: white;
     margin: 0;
+    display: inline;
 }
 
 .overlay__text h2{
     font-style: inherit;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 2rem;
     color: #020202;
     margin: 0;
 }
@@ -58,13 +62,7 @@
     right: 34%;
 }*/
 
-@media (max-width: 1290px) {
-    .image__container_welcome img{
-        /*background-size: cover;*/
-        object-position: right;
-        
-    }
-  }
+
 
 @media (max-width: 1000px) {
     .image__container_welcome img{
@@ -72,34 +70,28 @@
         object-position: right;
       
     }
+
+    .overlay__text{
+        max-width: 700px;
+    }
+    .overlay__text h1{
+        font-size: 4rem;
+    }
   }
 
 @media (max-width: 500px) {
-    .image__container_welcome {
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-        max-height: 100%;
-        max-width: 100%;
+    .image__container_welcome img{
+        /*background-size: cover;*/
+        object-position: right;
     }
 
-    .image__container_welcome img{
-        width: 100vw;
-        height: 100vh;
-        max-height: 100%;
-        max-width: 100%;
-
+    .overlay__text{
+        max-width: 700px;
     }
-
-    .image__container_welcome img{
-        position:absolute;
-        left: -100%;
-        right: -150%;
-        top: -100%;
-        bottom: -100%;
-        margin: auto;
-        min-height: 100%;
-        min-width: 100%;
-      
+    .overlay__text h1{
+        font-size: 3rem;
+    }
+    .overlay__text h2{
+        font-size: 1.5rem;
     }
   }

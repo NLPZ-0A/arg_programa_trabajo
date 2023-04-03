@@ -5,52 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite rides - the car you need!</title>
+
+    <!-------------------------------------TIPOGRAFIAS---------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+     <!-----------------------------ICONS BOXICONS------------------------------->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     <!---------------------------------STYLES----------------------------------------->
     <link href="./styles/normalize.css" type="text/css" rel="stylesheet">
     <link href="./styles/style_welcome_section.css" type="text/css" rel="stylesheet">
     <link href="./styles/style_navbar.css" type="text/css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/style_navbar_responsive.css" media="(max-width: 1000px)">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
+            <button class="navbar__toggle burguer-menu">
+                <span class="navbar__toggle-icon">
+                    <i class='bx bx-menu'></i>
+                </span>
+            </button>
+
             <div class="navbar__logo">
                 <img src="../images/logotipo.png" alt="logotipo">
             </div>
+
             <ul class="navbar__list">
                 <li class="navbar__item --activo"><i class='bx bx-home'></i></li>
                 <li class="navbar__item"><i class='bx bxs-car'></i></li>
                 <li class="navbar__item"><i class='bx bx-id-card'></i></li>
                 <li class="navbar__item"><i class='bx bx-info-square' ></i></li>
             </ul>
-            <div>
-               
-            </div>
+
+            <button class="navbar__toggle grid">
+                <span class="navbar__toggle-icon-grid">
+                    <i class='bx bxs-grid'></i>
+                </span>
+            </button>
         </nav>
-        
     </header>
 
     <main>
         <section class="welcome__section">
-
             <div class="image__container_welcome">
              <img src="../images/background_image.jpg" alt="imagen mclaren">
             </div>
             
             <div class="overlay__text">
-               
                     <h2>AT THE REACH OF YOUR HAND</h2>
-            
-    
-              
-                    <h1>The car you need!</h1>
-               
+        
+                    <h1>The car you need!</h1>   
             </div>
-           
-
         </section>
         
     </main>
