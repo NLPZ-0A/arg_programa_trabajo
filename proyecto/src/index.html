@@ -32,6 +32,19 @@
 
     <link rel="stylesheet" href="./styles/style_about.css" type="text/css">
     <link rel="stylesheet" href="./styles/style_footer.css" type="text/css">
+
+
+    <!------------------------------------SCRIPTS-------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <!-----------------------------MVC------------------------------------->
+    <script src="./model/connection.js" defer></script>
+    <script src="./javascript/controller_conecction.js" defer></script>
+    <script src="./javascript/view_controller.js" defer></script>
+
+    <script src="./javascript/carrousel_controller.js" defer></script>
+    <script src="./javascript/ej.js" defer></script>
+
 </head>
 
 <body>
@@ -119,17 +132,43 @@
                     </span>
                 </div>
 
-                <div class="carousel__cards">
-                  <div class="card">
-                    <img src="../images/coche1.jpg">
-                  </div>
-                  <div class="card selected">
-                    <img src="../images/coche3.jpg">
-                  </div>
-                  <div class="card">
-                    <img src="../images/coche2.jpg">
-                  </div>
+                <div class="mask__overflow">  
+                    <div class="carousel__cards" id="carousel__cards_container">
+                        <div class="card">
+                            <img src="../images/coche1.jpg">
+                        </div>
+                        <div class="card selected">
+                            <img src="../images/coche3.jpg">
+                        </div>
+                        <div class="card">
+                            <img src="../images/coche2.jpg">
+                        </div>
 
+                        <div class="card">
+                            <img src="../images/coche2.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche3.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche2.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche1.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche2.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche3.jpg">
+                        </div>
+
+                    </div>
                 </div>
 
                 <div class="btn__carrousel button__right-carrousel">

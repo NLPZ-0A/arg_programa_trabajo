@@ -9,15 +9,35 @@
   
   .carousel__cards {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
     transition: transform 0.3s ease;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Para navegadores basados en Gecko como Mozilla Firefox */
+  
+
+  .mask__overflow{
+    max-width: calc(70% / 3 * 3); 
+    overflow: hidden;
+}
   
   .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    flex: 0 0 auto;
+    width: calc(90% / 3); 
+    scroll-snap-align: start;
     height: 200px;
     margin: 0 10px;
     background-color: #ffffff;
@@ -26,11 +46,12 @@
     margin: 30px;
   }
 
+ 
+
   .card.selected{
     box-shadow:0 4px 2px rgba(0, 0, 0, 0.4);
-    width: 320px;
-    height: 220px;
-    
+    width: calc(95% / 3);
+    height: auto;
   }
 
   .card img{
@@ -44,6 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
