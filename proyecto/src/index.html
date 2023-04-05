@@ -21,22 +21,18 @@
      <!---------------------------------STYLES----------------------------------------->
     <link rel="stylesheet" href="./styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="./styles/style_welcome_section.css" type="text/css">
-
+    <link rel="stylesheet" href="./styles/syle_social_nav.css" type="text/css" >
     <link rel="stylesheet" href="./styles/style_navbar.css" type="text/css" >
     <link rel="stylesheet" href="./styles/style_navbar_responsive.css" media="(max-width: 1000px)">
-
     <link rel="stylesheet" href="./styles/style_cars_models.css" type="text/css">
     <link rel="stylesheet" href="./styles/style_cars_models_navbar.css" type="text/css">
     <link rel="stylesheet" href="./styles/style_card_carrousel.css" type="text/css">
     <link rel="stylesheet" href="./styles/style_card_properties.css" type="text/css">
-
     <link rel="stylesheet" href="./styles/style_about.css" type="text/css">
     <link rel="stylesheet" href="./styles/style_footer.css" type="text/css">
 
-
     <!------------------------------------SCRIPTS-------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-
     <!-----------------------------MVC------------------------------------->
     <script src="./model/connection.js" defer></script>
     <script src="./javascript/controller_conecction.js" defer></script>
@@ -44,12 +40,11 @@
 
     <script src="./javascript/carrousel_controller.js" defer></script>
     <script src="./javascript/ej.js" defer></script>
-
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar principal_navbar">
             <button class="navbar__toggle burguer-menu">
                 <span class="navbar__toggle-icon">
                     <i class='bx bx-menu'></i>
@@ -61,10 +56,10 @@
             </div>
 
             <ul class="navbar__list">
-                <li class="navbar__item --activo"><i class='bx bx-home'></i></li>
-                <li class="navbar__item"><i class='bx bxs-car'></i></li>
-                <li class="navbar__item"><i class='bx bx-id-card'></i></li>
-                <li class="navbar__item"><i class='bx bx-info-square' ></i></li>
+                <li class="navbar__item"><a href="#"><i class='bx bx-home'></i></a></li>
+                <li class="navbar__item"><a href="#"><i class='bx bxs-car'></i></a></li>
+                <li class="navbar__item"><a href="#"><i class='bx bx-id-card'></i></a></li>
+                <li class="navbar__item"><a href="#"><i class='bx bx-info-square' ></i></a></li>
             </ul>
 
             <button class="navbar__toggle grid">
@@ -73,6 +68,17 @@
                 </span>
             </button>
         </nav>
+
+        <nav class="social__navbar social">  
+            <ul class="social__list">
+                <li class="social__item"><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
+                <li class="social__item"><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                <li class="social__item"><a href="#"><i class='bx bxl-whatsapp' ></i></a></li>
+                <li class="social__item"><a href="#"><i class='bx bxl-tiktok' ></i></a></li>
+                <li class="social__item"><a href="#"><i class='bx bxl-instagram'></i></a></li>
+            </ul>
+        </nav> 
+
     </header>
 
     <main>
