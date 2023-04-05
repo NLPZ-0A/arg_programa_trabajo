@@ -5,33 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite rides - the car you need!</title>
+
+    <!----------------------------ICONO------------------------------>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+
+    <!-------------------------------------TIPOGRAFIAS---------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
     <link href="./styles/normalize.css" type="text/css" rel="stylesheet">
     <link href="./styles/style_welcome_section.css" type="text/css" rel="stylesheet">
     <link href="./styles/syle_social_nav.css" type="text/css" rel="stylesheet">
     <link href="./styles/style_navbar.css" type="text/css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+=======
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+     <!-----------------------------ICONS BOXICONS------------------------------->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     <!---------------------------------STYLES----------------------------------------->
+    <link rel="stylesheet" href="./styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style_welcome_section.css" type="text/css">
+
+    <link rel="stylesheet" href="./styles/style_navbar.css" type="text/css" >
+    <link rel="stylesheet" href="./styles/style_navbar_responsive.css" media="(max-width: 1000px)">
+
+    <link rel="stylesheet" href="./styles/style_cars_models.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style_cars_models_navbar.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style_card_carrousel.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style_card_properties.css" type="text/css">
+
+    <link rel="stylesheet" href="./styles/style_about.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style_footer.css" type="text/css">
+
+
+    <!------------------------------------SCRIPTS-------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <!-----------------------------MVC------------------------------------->
+    <script src="./model/connection.js" defer></script>
+    <script src="./javascript/controller_conecction.js" defer></script>
+    <script src="./javascript/view_controller.js" defer></script>
+
+    <script src="./javascript/carrousel_controller.js" defer></script>
+    <script src="./javascript/ej.js" defer></script>
+
+>>>>>>> main
 </head>
+
 <body>
     <header>
+<<<<<<< HEAD
         <nav class="navbar principal_navbar">
+=======
+        <nav class="navbar">
+            <button class="navbar__toggle burguer-menu">
+                <span class="navbar__toggle-icon">
+                    <i class='bx bx-menu'></i>
+                </span>
+            </button>
+
+>>>>>>> main
             <div class="navbar__logo">
                 <img src="../images/logotipo.png" alt="logotipo">
             </div>
+
             <ul class="navbar__list">
                 <li class="navbar__item"><a href="#"><i class='bx bx-home'></i></a></li>
                 <li class="navbar__item"><a href="#"><i class='bx bxs-car'></i></a></li>
                 <li class="navbar__item"><a href="#"><i class='bx bx-id-card'></i></a></li>
                 <li class="navbar__item"><a href="#"><i class='bx bx-info-square' ></i></a></li>
             </ul>
-            <div>
-               
-            </div>
-        </nav>
 
+<<<<<<< HEAD
         <nav class="social__navbar social">  
             <ul class="social__list">
                 <li class="social__item"><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
@@ -42,28 +91,212 @@
             </ul>
         </nav>    
 
+=======
+            <button class="navbar__toggle grid">
+                <span class="navbar__toggle-icon-grid">
+                    <i class='bx bxs-grid'></i>
+                </span>
+            </button>
+        </nav>
+>>>>>>> main
     </header>
 
     <main>
         <section class="welcome__section">
-
             <div class="image__container_welcome">
              <img src="../images/background_image.jpg" alt="imagen mclaren">
             </div>
             
             <div class="overlay__text">
-               
                     <h2>AT THE REACH OF YOUR HAND</h2>
-            
-    
-              
-                    <h1>The car you need!</h1>
-               
+        
+                    <h1>The car you need!</h1>   
             </div>
-           
-
         </section>
         
+        <section class="cars__model-view">
+            <form class="cars__model-form">
+                <label class="label__input">Vehículos en stock</label>
+
+                <div class="input__car-models">
+                    <button class="button_filter">
+                        <span class="filter__icon">
+                            <i class='bx bx-filter'></i>
+                        </span>
+                    </button>
+
+                    <label id="labelInput" for="miInput">Modelo</label>
+
+                    <div class="input_nav_cars">
+                        <select name="cars" id="cars__input">
+                            <option class="car__option" value="volvo">Volvo</option>
+                            <option class="car__option" value="tesla">Tesla</option>
+                            <option class="car__option" value="mercedes">Mercedes</option>
+                            <option class="car__option" value="audi">Audi</option>
+                        </select>
+
+                        <button class="button_search">
+                            <span class="search__icon">
+                                <i class='bx bx-search-alt-2' ></i>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <p class="counts__cars-models">12 coches disponibles</p>
+              
+
+            </form>
+
+            <p class="recommended__text">Coches recomendados calidad-precio</p>
+
+            <div class="carousel">
+                <div class="btn__carrousel button__left-carrousel">
+                    <span class="chevron icon-left">
+                        <i class='bx bxs-chevron-left' ></i>
+                    </span>
+                </div>
+
+                <div class="mask__overflow">  
+                    <div class="carousel__cards" id="carousel__cards_container">
+                        <div class="card">
+                            <img src="../images/coche1.jpg">
+                        </div>
+                        <div class="card selected">
+                            <img src="../images/coche3.jpg">
+                        </div>
+                        <div class="card">
+                            <img src="../images/coche2.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche2.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche3.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche2.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche1.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche2.jpg">
+                        </div>
+
+                        <div class="card">
+                            <img src="../images/coche3.jpg">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="btn__carrousel button__right-carrousel">
+                    <span class="chevron icon-right">
+                        <i class='bx bxs-chevron-right'></i>
+                    </span>
+                </div>
+            </div>
+
+           
+            <div class="card__properties">
+                <div class="car__properties">
+                    <div class="properties">
+                        <div class="title__properties">
+                                <p>TESLA MODEL S</p>
+                        </div>
+
+                        <div class="decription__properties">
+                                <p>El Tesla Model S es un automóvil eléctrico tipo Sedán fabricado por Tesla Motors, 
+                                    que inició sus entregas en el mercado estadounidense el 22 de junio de 2012.
+                                    Es un sedán liftback para 5 plazas. En 2020 el Tesla Model S Long Range Plus 
+                                    tenía una autonomía EPA de 647 km, que era la mayor para un coche eléctrico de serie.
+                                    En 2012 el modelo base (batería de 60 kWh y motor de 345 CV) tenía una autonomía de 338 km
+                                    y una aceleración de 0 a 100 km/h de 5,8 segundos. En 2019 el modelo P100DL (100 kWh) 
+                                    aceleraba de 0 a 100 km/h en 2,3 segundos y tenía una autonomía EPA de 555 km.</p>
+                        </div>
+
+                        <div class="car__properties__descriptions">
+                            <div class="propertie autonomia">
+                                <p class="propertie_text">
+                                        600 km
+                                    </p>
+                                    <p class="propertie_title">
+                                        AUTONOMIA
+                                    </p>
+                            </div>
+
+                            <div class="propertie velocidad">
+                                    <p class="propertie_text">
+                                        322km/h
+                                    </p>
+                                    <p class="propertie_title">
+                                        VELOCIDAD MAX
+                                    </p>
+                                </div>
+
+                                <div class="propertie aceleracion">
+                                    <p class="propertie_text">
+                                        2,1s
+                                    </p>
+                                    <p class="propertie_title">
+                                        (0-100) km/h
+                                    </p>
+                                </div>
+
+                                <div class="propertie potencia">
+                                    <p class="propertie_text">
+                                        1020 hp
+                                    </p>
+                                    <p class="propertie_title">
+                                        POTENCIA
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="button__container">
+                            <button class="button__view_more">ver mas</button>
+                        </div>
+                    </div>
+
+                    <div class="card__images">
+                        <div class="images__car_column">
+                            <div class="image__car_container">
+                                <img src="../images/teslasidemodels.jpg" alt="">
+                            </div>
+                            <div class="image__car_container">
+                                <img src="../images/interior.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!--<div class="images__car">
+                            <div class="image__car_container last">
+                                <img src="../images/ModelS.png" alt="">
+                            </div>
+                        </div>-->
+
+                    </div>
+            </div>
+          
+
+        </section>
+
+        <section class="about__section">
+            
+        </section>
+
     </main>
+
+    <footer class="footer__section">
+
+    </footer>
 </body>
 </html>

@@ -15,19 +15,30 @@
     backdrop-filter: blur(10px);
 }
 
+.navbar__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+   
+  }
+
 .navbar__logo {
     margin-top: 30px;
-    transition: all 0.3s;
 }
 
 .navbar__logo img{
-    max-width: 60px;
-    max-height: 70px;
+    width: 60px;
+    height: 70px;
     margin: 3px;
+    transition: all 0.3s;
 }
 
-.navbar__logo:hover {
-    margin-top: 30px;
+.navbar__logo img:hover {
+    width: 70px;
+    height: 80px;
     filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.2));
 }
 
@@ -40,7 +51,15 @@ ul{
 }
 
 ul li {
-    font-size: 28px;
+    font-size: 1.8rem;
+}
+
+.navbar__toggle{
+    display: none;
+}
+
+.navbar__toggle_grid{
+    display: none;
 }
 
 .navbar__item{
@@ -50,12 +69,19 @@ ul li {
 
 .navbar__item:hover{
     padding-bottom: 55px;
-    font-size: 24px;
+    font-size: 2rem;
     filter: drop-shadow(8px 8px 1px rgba(0, 0, 0, 0.4));
 }
 
 .navbar__item a{
     color: white;
 }
+
+@media (max-width: 1000px) {
+    nav{
+        display: none;
+    }
+  }
+
 
 
