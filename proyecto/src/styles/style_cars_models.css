@@ -13,3 +13,10 @@
     color: #252525;
     font-weight: 400;
 }
+
+@media (max-width: 1000px) {
+    .cars__model-view{
+        height: 140vh;
+    }
+
+}

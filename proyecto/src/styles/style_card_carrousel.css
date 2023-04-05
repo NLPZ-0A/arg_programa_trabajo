@@ -89,3 +89,8 @@
 }
 
 
+@media (max-width: 1000px) {
+  .btn__carrousel{
+    display: none;
+  }
+}

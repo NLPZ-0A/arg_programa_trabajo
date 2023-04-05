@@ -86,8 +86,15 @@
 }
   
   
-  
-
-
-
-  
+@media (max-width: 1000px) {
+    .card__properties{
+        flex-direction:column;
+    }
+    .car__properties{
+        width: 100%;
+    }
+    
+    .card__images{
+        width: 100%;
+    }
+   }

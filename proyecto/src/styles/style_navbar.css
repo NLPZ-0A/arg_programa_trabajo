@@ -33,13 +33,13 @@
     width: 60px;
     height: 70px;
     margin: 3px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .navbar__logo img:hover {
     width: 70px;
     height: 80px;
-    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(8px 8px 1px rgba(0, 0, 0, 0.4));
 }
 
 .navbar__list{
