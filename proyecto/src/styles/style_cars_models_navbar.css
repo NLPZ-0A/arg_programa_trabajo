@@ -1,0 +1,85 @@
+.cars__model-form{
+    display: flex;
+    align-items: center;
+    /*padding: 1rem;*/
+    padding: 15px;
+    background-color: #704244;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.label__input{
+    color: white;
+    margin-left: 118px ;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.filter__icon{
+    color: white;
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+.input__car-models{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+    font-size: 1rem;
+    font-weight: 100;
+   
+}
+
+#labelInput {
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: white;
+}
+
+#cars__input{
+    position: relative;
+    bottom: 0px;
+    border: none;
+    border-bottom: 1px solid white; 
+    padding: 4px; 
+    color:white;
+    font-weight: 100;
+    background-color: transparent; 
+    width: 12rem;
+  }
+
+.car__option{
+    color: rgb(21, 21, 21);
+}
+
+.button_search{
+    position: relative;
+    bottom: -4px;
+    color: white;
+    font-size: 1.2rem;
+   
+}
+
+.counts__cars-models{
+    color: white;
+    font-weight: 500;
+    padding-left:50px;
+}
+
+@media (max-width: 1000px) {
+    .label__input {
+       margin: 0;
+    }
+    
+    .cars__model-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /*padding: 1rem;*/
+
+    }
+  }

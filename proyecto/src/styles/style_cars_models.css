@@ -1,7 +1,15 @@
 .cars__model-view{
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     max-height: 100%;
     max-width: 100%;
-    background-color: brown;
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+}
+
+.recommended__text{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #252525;
+    font-weight: 400;
 }
