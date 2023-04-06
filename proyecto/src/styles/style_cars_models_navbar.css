@@ -97,4 +97,18 @@
     .input_nav_cars{
         display: flex;
     }
+
+    .counts__cars-models{
+        display: none;
+    }
+
+    .search__icon{
+        background-color: #6b3f41;
+        box-shadow:  1px 1px 4px #704244,
+             -1px -1px 4px #5c3638;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 2rem;
+        margin: 10px;
+    }
  }
