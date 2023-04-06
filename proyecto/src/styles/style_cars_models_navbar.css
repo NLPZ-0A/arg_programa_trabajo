@@ -70,16 +70,31 @@
 }
 
 @media (max-width: 1000px) {
-    .label__input {
-       margin: 0;
+    .label__input{
+        margin: 0;
     }
-    
-    .cars__model-form{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        /*padding: 1rem;*/
-
-    }
+     .cars__model-form{
+       max-width: 100%;
+     }
   }
+
+  @media (max-width: 700px) {
+    .label__input{
+        margin: 0;
+    }
+
+    .cars__model-form{
+      max-width: 100%;
+    }
+
+    .cars__input{
+        width: 50%;
+    }
+
+    .counts__cars-models{
+        font-size: 1rem;
+    }
+    .input_nav_cars{
+        display: flex;
+    }
+ }
