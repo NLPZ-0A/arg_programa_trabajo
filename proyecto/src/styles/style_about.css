@@ -1,8 +1,53 @@
 .about__section{
     width: 100vw;
-    height: 100vh;
+    height: 160vh;
     max-height: 100%;
     min-width: 100%;
     max-width: 100%;
-    background-color:red;
+    background-color:rgb(232, 111, 111);
 }
+.padre{
+    display: flex;
+    margin: 30px;
+}
+
+.columna1{
+    background-color: blue;
+    min-width: 50%;
+    min-height: 100%;
+}
+
+.columna2{
+    background-color: red;
+    min-width: 50%;
+    min-height: 100%;
+}
+
+.photo_about{
+    max-width: 100%;
+    height: 30%;
+}
+
+.photo_about img{
+    background-image: cover;
+    object-fit: cover;
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+}
+
+
+.text{
+    display: block;
+    margin: 50px;
+    max-width: 100%;
+    height: 30%;
+}
+
+
+@media (max-width: 1000px) {
+    .padre{
+        display: flex;
+        flex-direction: column;
+    }
+  }
