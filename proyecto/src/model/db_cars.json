@@ -1,6 +1,6 @@
 {
     "vehiculos": [
-      {
+      {  "id" :  1,
         "marca": "Ferrari",
         "modelo": "GTC4Lusso",
         "descripcion" : "El GTC4Lusso tiene carrocería de 3 puertas y tracción en las cuatro ruedas. Está propulsado por un motor V12 6.3 L ubicado en la parte delantera central. El motor Ferrari F140 65 ° V12 de 6,262 cc (382,1 pies cúbicos) del GTC4Lusso tiene una potencia de 690 CV (507 kW, 681 hp) a 8,000 rpm y 697 Nm (514 lb-ft ) a 5,750 rpm, también gracias a un relación de compresión elevada a 13.5: 1.1 afirma una velocidad máxima de 345 km / h (214 mph), sin cambios desde el FF, y un tiempo de aceleración de 0-100 km / h (0-62 mph) de 3.4 segundos. y una aceleración de 0-100 km/h en 3.4 segundos",
@@ -12,7 +12,7 @@
         "sideImage": "https://i.ibb.co/Q6sRvdN/gtclusso-side.png",
         "images" : [{ " img1" : "https://i.ibb.co/cCTp6Cn/gtclusso.jpg", "img2" : "https://i.ibb.co/cyPNNhK/interior.jpg" }]
       },
-      {
+      { "id" : 2,
         "marca": "Ferrari",
         "modelo": "F8 Tributo",
         "descripcion": "El Ferrari F8 Tributo es un deportivo con motor V8 de 3.9 litros con 710 caballos de fuerza y una velocidad máxima de 340 km/h. Acelera de 0 a 100 km/h en 2,9 segundos. Es el reemplazo del Ferrari 488 GTB.",
@@ -21,10 +21,10 @@
         "aceleracion": "2.9",
         "potencia": "710",
         "precio": 275000,
-        "sideImage": "https://i.ibb.co/ChVK05r/side.png",
-        "images" : [{"img1":"https://i.ibb.co/rF9jsjy/ferrari.jpg", "img2":"https://i.ibb.co/yPj8ZyH/interior.jpg"}]
+        "sideImage": "../imagenes_bbdd/f8/side.png",
+        "images" : [{"img1":"../imagenes_bbdd/f8/ferrari.png", "img2":"../imagenes_bbdd/f8/interior.jpg"}]
       },
-      {
+      { "id": 3,
         "marca": "Ferrari",
         "modelo": "SF90 Stradale",
         "descripcion": "El Ferrari SF90 Stradale es un híbrido enchufable con una potencia total de 986 caballos de fuerza y una velocidad máxima de 340 km/h. Acelera de 0 a 100 km/h en 2,5 segundos. Es el primer Ferrari de producción en serie con tracción en las cuatro ruedas.",
@@ -36,7 +36,7 @@
         "sideImage": "",
         "images" : [{"img1":"https://i.ibb.co/rF9jsjy/ferrari.jpg", "img2":"https://i.ibb.co/yPj8ZyH/interior.jpg"}]
       },
-      {
+      { "id": 3,
         "marca": "Ferrari",
         "modelo": "812 Competizione",
         "descripcion": "El Ferrari 812 Competizione es un deportivo con motor V12 de 6.5 litros con 819 caballos de fuerza y una velocidad máxima de más de 340 km/h. Acelera de 0 a 100 km/h en menos de 2,9 segundos. Es una edición limitada del Ferrari 812 Superfast.",
@@ -46,9 +46,9 @@
         "potencia": "819",
         "precio": 580000,
         "sideImage": "",
-        "images" : []
+        "images" : [{"img1":"https://i.ibb.co/rF9jsjy/ferrari.jpg", "img2":"https://i.ibb.co/yPj8ZyH/interior.jpg"}]
       },
-      {
+      { "id": 3,
         "marca": "Ferrari",
         "modelo": "488 Pista",
         "descripcion": "El Ferrari 488 Pista es un deportivo con motor V8 de 3.9 litros con 710 caballos de fuerza y una velocidad máxima de 340 km/h. Acelera de 0 a 100 km/h en 2,85 segundos. Es el Ferrari más potente con motor V8 hasta la fecha.",
@@ -60,7 +60,7 @@
         "sideImage": "",
         "images" : []
       },
-      {
+      { "id": 3,
         "marca": "Ferrari",
         "modelo": "Portofino M",
         "descripcion" : "El Portofino M es un descapotable con techo duro retráctil. Está propulsado por un motor V8 3.9 L con una potencia de 620 CV y 760 Nm de torque. Tiene una velocidad máxima de 320 km/h y acelera de 0 a 100 km/h en 3.45 segundos.",
@@ -85,7 +85,7 @@
         "images" : [{"img1": "https://i.ibb.co/M8CTkFw/car.jpg", "img2":"https://i.ibb.co/VBqGbY5/interior.jpg"}]
 
       },
-      {
+      { "id": 3,
         "marca": "Ferrari",
         "modelo": "488 GTB",
         "descripcion": "El Ferrari 488 GTB es un automóvil deportivo de motor central y tracción trasera equipado con un motor V8 de 3.9 L. El motor es capaz de producir 660 CV y 760 Nm de torque, lo que permite al automóvil acelerar de 0 a 100 km/h en solo 3 segundos. La velocidad máxima es de 330 km/h.",
@@ -97,7 +97,7 @@
         "sideImage": "",
         "images" : []
     },
-    {
+    { "id": 3,
         "marca": "Ferrari",
         "modelo": "812 Superfast",
         "descripcion": "El Ferrari 812 Superfast es un automóvil deportivo de gran turismo con motor central delantero y tracción trasera. Está propulsado por un motor V12 de 6,5 litros que produce una potencia máxima de 800 CV y un par máximo de 718 Nm. El motor está acoplado a una transmisión de doble embrague de 7 velocidades. El coche tiene una velocidad máxima de 340 km/h y acelera de 0 a 100 km/h en 2,9 segundos. También cuenta con tecnologías avanzadas de control de chasis y aerodinámica para ofrecer una experiencia de conducción excepcional.",
@@ -109,7 +109,7 @@
         "sideImage": "",
         "images" : []
     },
-    {
+    { "id": 3,
         "marca": "Ferrari",
         "modelo": "Roma",
         "descripcion": "El Ferrari Roma es un automóvil deportivo de gran turismo producido por el fabricante italiano Ferrari. Presentado en 2019, el Roma está equipado con un motor V8 de 3.9 litros que genera una potencia máxima de 612 caballos de fuerza y un torque de 560 lb-ft, lo que le permite acelerar de 0 a 100 km/h en solo 3.4 segundos. También cuenta con una velocidad máxima de más de 320 km/h. El diseño del Roma se inspira en los coches deportivos clásicos de los años 50 y 60, con líneas elegantes y una carrocería esculpida.",
@@ -121,7 +121,7 @@
         "sideImage": "",
         "images" : []
     },
-    {
+    { "id": 3,
         "marca": "Ferrari",
         "modelo": "GTC4Lusso T",
         "descripcion": "El Ferrari GTC4Lusso T es un automóvil deportivo de gran turismo presentado por el fabricante italiano Ferrari en 2016. Equipado con un motor V8 de 3.9 litros que genera una potencia máxima de 602 caballos de fuerza y un torque de 560 lb-ft, el GTC4Lusso T acelera de 0 a 100 km/h en solo 3.5 segundos y tiene una velocidad máxima de más de 320 km/h. A diferencia del GTC4Lusso convencional, el GTC4Lusso T tiene tracción trasera en lugar de tracción en las cuatro ruedas. También cuenta con una suspensión mejorada y una dirección más ágil.",
@@ -133,7 +133,7 @@
         "sideImage": "",
         "images" : []
     },
-    {
+    { "id": 3,
         "marca": "Ferrari",
         "modelo": "F8 Spider",
         "descripcion": "El F8 Spider es el descapotable de motor central más poderoso y de mejor rendimiento que haya producido Ferrari. Tiene un motor V8 de 3.9 litros que produce 710 caballos de fuerza y ​​es capaz de acelerar de 0 a 100 km / h en 2.9 segundos. Además, su techo rígido retráctil se puede plegar o desplegar en solo 14 segundos y a velocidades de hasta 45 km / h.",
@@ -145,7 +145,7 @@
         "sideImage": "",
         "images" : []
       },
-      {
+      { "id": "ferrari_10",
         "marca": "Ferrari",
         "modelo": "LaFerrari Aperta",
         "descripcion": "La LaFerrari Aperta es una versión descapotable del LaFerrari. Es un híbrido de alto rendimiento con un motor V12 de 6.3 litros y un motor eléctrico. El motor V12 produce 800 CV a 9,250 rpm y 700 Nm de par máximo a 6,750 rpm, mientras que el motor eléctrico produce 163 CV y 270 Nm de par. La potencia total del sistema es de 963 CV. La velocidad máxima es superior a los 350 km/h y la aceleración de 0 a 100 km/h se realiza en menos de 3 segundos.",
