@@ -1,53 +1,89 @@
 .about__section{
     width: 100vw;
-    height: 160vh;
+    height: 100vh;
     max-height: 100%;
     min-width: 100%;
     max-width: 100%;
-    background-color:rgb(232, 111, 111);
-}
-.padre{
-    display: flex;
-    margin: 30px;
+    background-color:white;
+    margin: 1px;
 }
 
-.columna1{
-    background-color: blue;
-    min-width: 50%;
-    min-height: 100%;
-}
-
-.columna2{
-    background-color: red;
-    min-width: 50%;
-    min-height: 100%;
-}
-
-.photo_about{
-    max-width: 100%;
-    height: 30%;
-}
-
-.photo_about img{
-    background-image: cover;
-    object-fit: cover;
-    background-position: center top;
-    width: 100%;
+.seccion {
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 100%;
+    margin: 100px;
+    align-items: stretch; /* Estira las filas para cubrir la altura completa */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .fila {
+    display: flex;
+    flex: 1;
+    height: 30%; /* Limita la altura de las filas al 30% de la sección */
+    margin: 20px;
+  }
+  
+  .columna {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  
+.text-about{
+    margin: 0 auto;
+    font-size: 20px;
 }
 
-
-.text{
-    display: block;
-    margin: 50px;
+  img {
+    height: 100%;
     max-width: 100%;
-    height: 30%;
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+.titulo-columna{
+  padding: 5px;
+  font-weight: 900;
+  font-size: 25px;
 }
 
+.text-container{
+  margin: 10px;
+  max-width: 90%;
+  margin-left: 40px;
+
+}
+
+@media (max-width: 1200px){
+  .about__section{
+    height: 200vh;
+    max-height: 100%;
+  }
+  .img{
+    height: 60%;
+  }
+}
 
 @media (max-width: 1000px) {
-    .padre{
-        display: flex;
-        flex-direction: column;
-    }
+
+  .fila{
+    flex-direction: column;
+    margin: 30px;
   }
+  .fila.medio{
+    flex-direction: column-reverse;
+  }
+  .about__section{
+    height: 250vh;
+    max-height: 100%;
+  }
+  .text-container{
+    min-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+}
