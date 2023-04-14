@@ -3,11 +3,12 @@ const Vista = {
       const card_container = document.getElementById('carousel__cards_container');
   
       datos.forEach(dato => {
-        const card = document.createElement('div');
+       /* const card = document.createElement('div');
         card.className = 'card';
         
         elemento.textContent = dato;
-        contenedor.appendChild(elemento);
-      });
+        contenedor.appendChild(elemento);*/
+        console.log('datos obtenidos');
+      })
     }
   };
