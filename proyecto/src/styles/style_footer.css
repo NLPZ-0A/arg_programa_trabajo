@@ -94,6 +94,6 @@ li {
 #logos_footer {
     background-color: rgb(129, 33, 33);
     min-height: 100%;
-    width: 20%;
+    min-width: 20%;
     
 }
