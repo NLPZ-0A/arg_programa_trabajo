@@ -1,14 +1,192 @@
-const Modelo = {
-  datos: [],
-  obtenerDatos: async function() {
-    try {
-      uri = 'db_cars.json'
-      const respuesta = await fetch('db_cars.json');
-      const datosJson = await respuesta.json();
-      this.datos = datosJson;
-      console.log(datosJson);
-    } catch(error) {
-      console.error(error);
-    }
-  }
-};
+let bbdd = [{
+  "vehiculos": [
+    {  "id" :  "ferrari_0",
+      "marca": "Ferrari",
+      "modelo": "GTC4Lusso",
+      "descripcion" : "El GTC4Lusso tiene carrocería de 3 puertas y tracción en las cuatro ruedas. Está propulsado por un motor V12 6.3 L ubicado en la parte delantera central. El motor Ferrari F140 65 ° V12 de 6,262 cc (382,1 pies cúbicos) del GTC4Lusso tiene una potencia de 690 CV (507 kW, 681 hp) a 8,000 rpm y 697 Nm (514 lb-ft ) a 5,750 rpm, también gracias a un relación de compresión elevada a 13.5: 1.1 afirma una velocidad máxima de 345 km / h (214 mph), sin cambios desde el FF, y un tiempo de aceleración de 0-100 km / h (0-62 mph) de 3.4 segundos. y una aceleración de 0-100 km/h en 3.4 segundos",
+      "autonomia" : "350",
+      "velocidad" : "345",
+      "aceleracion" :"3.4",
+      "potencia" : "681",
+      "precio": 1000,
+      "sideImage": "../imagenes_bbdd/gtclusso/gtclusso_side.png",
+      "images" : [{ "img1" : "../imagenes_bbdd/gtclusso/gtclusso.jpg", "img2" : "../imagenes_bbdd/gtclusso/interior.jpg" }]
+    },
+    { "id" : "ferrari_1",
+      "marca": "Ferrari",
+      "modelo": "F8 Tributo",
+      "descripcion": "El Ferrari F8 Tributo es un deportivo con motor V8 de 3.9 litros con 710 caballos de fuerza y una velocidad máxima de 340 km/h. Acelera de 0 a 100 km/h en 2,9 segundos. Es el reemplazo del Ferrari 488 GTB.",
+      "autonomia": "420",
+      "velocidad": "340",
+      "aceleracion": "2.9",
+      "potencia": "710",
+      "precio": 1000,
+      "sideImage": "../imagenes_bbdd/f8/side.png",
+      "images" : [{"img1":"../imagenes_bbdd/f8/ferrari.jpg", "img2":"../imagenes_bbdd/f8/interior.jpg"}]
+    },
+    { "id": "ferrari_2",
+      "marca": "Ferrari",
+      "modelo": "SF90 Stradale",
+      "descripcion": "El Ferrari SF90 Stradale es un híbrido enchufable con una potencia total de 986 caballos de fuerza y una velocidad máxima de 340 km/h. Acelera de 0 a 100 km/h en 2,5 segundos. Es el primer Ferrari de producción en serie con tracción en las cuatro ruedas.",
+      "autonomia": "525",
+      "velocidad": "340",
+      "aceleracion": "2.5",
+      "potencia": "986",
+      "precio": 1000,
+      "sideImage": "../imagenes_bbdd/sf90_stradale/side.png",
+      "images" : [{"img1":"../imagenes_bbdd/sf90_stradale/sf90_stradale.jpg", "img2":"../imagenes_bbdd/sf90_stradale/interior.jpg"}]
+    },
+    { "id": 'ferrari_3',
+      "marca": "Ferrari",
+      "modelo": "812 Competizione",
+      "descripcion": "El Ferrari 812 Competizione es un deportivo con motor V12 de 6.5 litros con 819 caballos de fuerza y una velocidad máxima de más de 340 km/h. Acelera de 0 a 100 km/h en menos de 2,9 segundos. Es una edición limitada del Ferrari 812 Superfast.",
+      "autonomia": "600",
+      "velocidad": "340",
+      "aceleracion": "2.9",
+      "potencia": "819",
+      "precio": 580000,
+      "sideImage": "../imagenes_bbdd/812competizione/side.png",
+      "images" : [{"img1":"../imagenes_bbdd/812competizione/812competizione.jpg", "img2":"../imagenes_bbdd/812competizione/interior.jpg"}]
+    },
+    { "id": 'ferrari_4',
+      "marca": "Ferrari",
+      "modelo": "488 Pista",
+      "descripcion": "El Ferrari 488 Pista es un deportivo con motor V8 de 3.9 litros con 710 caballos de fuerza y una velocidad máxima de 340 km/h. Acelera de 0 a 100 km/h en 2,85 segundos. Es el Ferrari más potente con motor V8 hasta la fecha.",
+      "autonomia": "521",
+      "velocidad": "340",
+      "aceleracion": "2.85",
+      "potencia": "710",
+      "precio": 320000,
+      "sideImage": "../imagenes_bbdd/488Pista/side.png",
+      "images" : [{"img1":"../imagenes_bbdd/488Pista/488Pista.jpg", "img2":"../imagenes_bbdd/488Pista/interior.jpg"}]
+    },
+    { "id": "ferrari_5",
+      "marca": "Ferrari",
+      "modelo": "Portofino M",
+      "descripcion" : "El Portofino M es un descapotable con techo duro retráctil. Está propulsado por un motor V8 3.9 L con una potencia de 620 CV y 760 Nm de torque. Tiene una velocidad máxima de 320 km/h y acelera de 0 a 100 km/h en 3.45 segundos.",
+      "autonomia" : "660",
+      "velocidad" : "320",
+      "aceleracion" :"3.45",
+      "potencia" : "620",
+      "precio": 245000,
+      "sideImage": "../imagenes_bbdd/portofinoM/side.png",
+      "images" : [{"img1":"../imagenes_bbdd/portofinoM/portofinoM.jpg", "img2":"../imagenes_bbdd/portofinoM/interior.jpg"}]
+  },
+  {
+    "id": "mercedes_s_class",
+    "marca": "Mercedes-Benz",
+    "modelo": "S-Class",
+    "descripcion": "El Mercedes-Benz S-Class es un sedán de lujo con un interior espacioso y lujoso. Está propulsado por un motor V8 4.0 L con una potencia de 496 CV y 516 lb-pie de torque. Tiene una velocidad máxima de 250 km/h y acelera de 0 a 100 km/h en 4.4 segundos.",
+    "autonomia": "700",
+    "velocidad": "250",
+    "aceleracion": "4.4",
+    "potencia": "496",
+    "precio": 119900,
+    "sideImage": "../imagenes_bbdd/s-class/side.png",
+    "images": [{"img1":"../imagenes_bbdd/s-class/s-class.jpg", "img2":"../imagenes_bbdd/s-class/interior.jpg"}]
+  },
+  {
+    "id": "mercedes_gls",
+    "marca": "Mercedes-Benz",
+    "modelo": "GLS",
+    "descripcion": "El Mercedes-Benz GLS es un SUV de lujo con capacidad para siete pasajeros. Está propulsado por un motor V8 4.0 L con una potencia de 483 CV y 516 lb-pie de torque. Tiene una velocidad máxima de 250 km/h y acelera de 0 a 100 km/h en 5.3 segundos.",
+    "autonomia": "900",
+    "velocidad": "250",
+    "aceleracion": "5.3",
+    "potencia": "483",
+    "precio": 109000,
+    "sideImage": "../imagenes_bbdd/gls/side.png",
+    "images": [{"img1":"../imagenes_bbdd/gls/gls.jpg", "img2":"../imagenes_bbdd/gls/interior.png"}]
+  },
+  {
+    "id": "mercedes_amg_gt",
+    "marca": "Mercedes-Benz",
+    "modelo": "AMG GT",
+    "descripcion": "El Mercedes-Benz AMG GT es un deportivo de alto rendimiento con líneas aerodinámicas y un interior deportivo. Está propulsado por un motor V8 4.0 L con una potencia de 523 CV y 494 lb-pie de torque. Tiene una velocidad máxima de 304 km/h y acelera de 0 a 100 km/h en 3.7 segundos.",
+    "autonomia": "500",
+    "velocidad": "304",
+    "aceleracion": "3.7",
+    "potencia": "523",
+    "precio": 141200,
+    "sideImage": "../imagenes_bbdd/amg-gt/side.png",
+    "images": [{"img1":"../imagenes_bbdd/amg-gt/amg-gt.jpg", "img2":"../imagenes_bbdd/amg-gt/interior.jpg"}]
+  },
+  {
+    "id": "mercedes_amg_gt_black_series",
+    "marca": "Mercedes-Benz",
+    "modelo": "AMG GT Black Series",
+    "descripcion": "El Mercedes-AMG GT Black Series es el coche de producción en serie más rápido de la historia de Mercedes-Benz. Está equipado con un motor V8 4.0 L biturbo que produce 730 CV y 800 Nm de par. Tiene una velocidad máxima de 325 km/h y acelera de 0 a 100 km/h en 3.2 segundos.",
+    "autonomia": "634",
+    "velocidad": "325",
+    "aceleracion": "3.2",
+    "potencia": "730",
+    "precio": 325000,
+    "sideImage": "../imagenes_bbdd/amg-gt/side.png",
+    "images": [{"img1":"../imagenes_bbdd/amg-gt/amg-gt.jpg", "img2":"../imagenes_bbdd/amg-gt/interior.jpg"}]
+},
+{
+  "id": "mercedes_maybach_s650_cabriolet",
+  "marca": "Mercedes-Benz",
+  "modelo": "Maybach S650 Cabriolet",
+  "descripcion": "El Mercedes-Maybach S650 Cabriolet es un descapotable de lujo de edición limitada. Está equipado con un motor V12 biturbo de 6.0 L que produce 621 CV y 1000 Nm de par. Tiene una velocidad máxima limitada electrónicamente a 250 km/h y acelera de 0 a 100 km/h en 4.1 segundos.",
+  "autonomia": "453",
+  "velocidad": "250",
+  "aceleracion": "4.1",
+  "potencia": "621",
+  "precio": 350000,
+  "sideImage": "../imagenes_bbdd/maybach/side.png",
+  "images": [{"img1":"../imagenes_bbdd/maybach/MaybachS650.jpg", "img2":"../imagenes_bbdd/maybach/interior.jpg"}]
+},
+{
+  "id": "mercedes_amg_gt_r_pro",
+  "marca": "Mercedes-Benz",
+  "modelo": "AMG GT R Pro",
+  "descripcion": "El Mercedes-AMG GT R Pro es un coupé deportivo de altas prestaciones. Está equipado con un motor V8 biturbo de 4.0 L que produce 577 CV y 700 Nm de par. Tiene una velocidad máxima de 318 km/h y acelera de 0 a 100 km/h en 3.6 segundos.",
+  "autonomia": "597",
+  "velocidad": "318",
+  "aceleracion": "3.6",
+  "potencia": "577",
+  "precio": 200000,
+  "sideImage": "../imagenes_bbdd/amg-gt-pro/side.png",
+  "images": [{"img1":"../imagenes_bbdd/amg-gt-pro/amg-gt-pro.jpg", "img2":"../imagenes_bbdd/amg-gt-pro/interior.jpg"}]
+},{
+  "id": "tesla_1",
+  "marca": "Tesla",
+  "modelo": "Model S Plaid",
+  "descripcion" : "El Tesla Model S Plaid es un automóvil eléctrico de alta gama con un diseño elegante y futurista. Cuenta con un motor eléctrico de tres motores que entrega una potencia de 1020 caballos de fuerza y un par máximo de 1350 Nm. Tiene una velocidad máxima de 322 km/h y acelera de 0 a 100 km/h en solo 1.98 segundos.",
+  "autonomia" : "628",
+  "velocidad" : "322",
+  "aceleracion" :"1.98",
+  "potencia" : "1020",
+  "precio": 149990,
+  "sideImage": "",
+  "images" : [{"img1":"", "img2":""}]
+},
+{
+  "id": "tesla_2",
+  "marca": "Tesla",
+  "modelo": "Model X Plaid",
+  "descripcion" : "El Tesla Model X Plaid es un SUV eléctrico con un diseño futurista y elegante. Cuenta con un motor eléctrico de tres motores que entrega una potencia de 1020 caballos de fuerza y un par máximo de 1350 Nm. Tiene una velocidad máxima de 262 km/h y acelera de 0 a 100 km/h en solo 2.5 segundos.",
+  "autonomia" : "547",
+  "velocidad" : "262",
+  "aceleracion" :"2.5",
+  "potencia" : "1020",
+  "precio": 139990,
+  "sideImage": "",
+  "images" : [{"img1":"", "img2":""}]
+},
+{
+  "id": "tesla_3",
+  "marca": "Tesla",
+  "modelo": "Model 3 Performance",
+  "descripcion" : "El Tesla Model 3 Performance es un sedán eléctrico de alta gama con un diseño elegante y aerodinámico. Cuenta con un motor eléctrico que entrega una potencia de 450 caballos de fuerza y un par máximo de 639 Nm. Tiene una velocidad máxima de 261 km/h y acelera de 0 a 100 km/h en solo 3.3 segundos.",
+  "autonomia" : "568",
+  "velocidad" : "261",
+  "aceleracion" :"3.3",
+  "potencia" : "450",
+  "precio": 69990,
+  "sideImage": "",
+  "images" : [{"img1":"", "img2":""}]
+},
+  ]
+}]

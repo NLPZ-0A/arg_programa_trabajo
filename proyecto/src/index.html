@@ -35,7 +35,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!-----------------------------MVC------------------------------------->
     <script src="./model/connection.js" defer></script>
-    <script src="./javascript/controller_conecction.js" defer></script>
+
     <script src="./javascript/view_controller.js" defer></script>
 
     <script src="./javascript/carrousel_controller.js" defer></script>
@@ -118,10 +118,7 @@
 
                     <div class="input_nav_cars">
                         <select name="cars" id="cars__input">
-                            <option class="car__option" value="volvo">Volvo</option>
-                            <option class="car__option" value="tesla">Tesla</option>
-                            <option class="car__option" value="mercedes">Mercedes</option>
-                            <option class="car__option" value="audi">Audi</option>
+                            
                         </select>
 
                         <button class="button_search">
@@ -149,39 +146,7 @@
 
                 <div class="mask__overflow">  
                     <div class="carousel__cards" id="carousel__cards_container">
-                        <div class="card">
-                            <img src="../images/coche1.jpg">
-                        </div>
-                        <div class="card selected">
-                            <img src="../images/coche3.jpg">
-                        </div>
-                        <div class="card">
-                            <img src="../images/coche2.jpg">
-                        </div>
-
-                        <div class="card">
-                            <img src="../images/coche2.jpg">
-                        </div>
-
-                        <div class="card">
-                            <img src="../images/coche3.jpg">
-                        </div>
-
-                        <div class="card">
-                            <img src="../images/coche2.jpg">
-                        </div>
-
-                        <div class="card">
-                            <img src="../images/coche1.jpg">
-                        </div>
-
-                        <div class="card">
-                            <img src="../images/coche2.jpg">
-                        </div>
-
-                        <div class="card">
-                            <img src="../images/coche3.jpg">
-                        </div>
+                     
 
                     </div>
                 </div>
@@ -198,11 +163,11 @@
                 <div class="car__properties">
                     <div class="properties">
                         <div class="title__properties">
-                                <p>TESLA MODEL S</p>
+                                <p id="title">TESLA MODEL S</p>
                         </div>
 
                         <div class="decription__properties">
-                                <p>El Tesla Model S es un automóvil eléctrico tipo Sedán fabricado por Tesla Motors, 
+                                <p id="descripcion">El Tesla Model S es un automóvil eléctrico tipo Sedán fabricado por Tesla Motors, 
                                     que inició sus entregas en el mercado estadounidense el 22 de junio de 2012.
                                     Es un sedán liftback para 5 plazas. En 2020 el Tesla Model S Long Range Plus 
                                     tenía una autonomía EPA de 647 km, que era la mayor para un coche eléctrico de serie.
@@ -213,7 +178,7 @@
 
                         <div class="car__properties__descriptions">
                             <div class="propertie autonomia">
-                                <p class="propertie_text">
+                                <p class="propertie_text" id="autonomia">
                                         600 km
                                     </p>
                                     <p class="propertie_title">
@@ -222,7 +187,7 @@
                             </div>
 
                             <div class="propertie velocidad">
-                                    <p class="propertie_text">
+                                    <p class="propertie_text" id="velocidad">
                                         322km/h
                                     </p>
                                     <p class="propertie_title">
@@ -231,7 +196,7 @@
                                 </div>
 
                                 <div class="propertie aceleracion">
-                                    <p class="propertie_text">
+                                    <p class="propertie_text" id="aceleracion">
                                         2,1s
                                     </p>
                                     <p class="propertie_title">
@@ -240,7 +205,7 @@
                                 </div>
 
                                 <div class="propertie potencia">
-                                    <p class="propertie_text">
+                                    <p class="propertie_text" id="potencia">
                                         1020 hp
                                     </p>
                                     <p class="propertie_title">
@@ -258,10 +223,10 @@
 
                     <div class="card__images">
                         <div class="images__car_column">
-                            <div class="image__car_container">
+                            <div class="image__car_container" id="car_image">
                                 <img src="../images/teslasidemodels.jpg" alt="">
                             </div>
-                            <div class="image__car_container">
+                            <div class="image__car_container" id="interior_image">
                                 <img src="../images/interior.jpg" alt="">
                             </div>
                         </div>
@@ -368,11 +333,11 @@
             <h1 id="titulo_footer">¡ELECTRICOS! PERO NO DE JUGUETE.</h1>
         </div>
         <div id="fondo_tesla">
-            <img src="/proyecto/Fotos/tesla fondo.jpg" alt="" >
+            <img src="../../Fotos/tesla fondo.jpg" alt="" >
         </div>
         
         <div class="deep_footer">
-                <div id="logo_footer"><img src="/proyecto/Fotos/Logo png.png" alt="" ></div>
+                <div id="logo_footer"><img src="../../Fotos/Logo png.png" alt="" ></div>
 
             <div id="padre_footer">
                 <div id="info_contenedor">
