@@ -8,7 +8,7 @@ let bbdd = [{
       "velocidad" : "345",
       "aceleracion" :"3.4",
       "potencia" : "681",
-      "precio": 1000,
+      "precio": 300000,
       "sideImage": "../imagenes_bbdd/gtclusso/gtclusso_side.png",
       "images" : [{ "img1" : "../imagenes_bbdd/gtclusso/gtclusso.jpg", "img2" : "../imagenes_bbdd/gtclusso/interior.jpg" }]
     },
@@ -20,7 +20,7 @@ let bbdd = [{
       "velocidad": "340",
       "aceleracion": "2.9",
       "potencia": "710",
-      "precio": 1000,
+      "precio": 230000,
       "sideImage": "../imagenes_bbdd/f8/side.png",
       "images" : [{"img1":"../imagenes_bbdd/f8/ferrari.jpg", "img2":"../imagenes_bbdd/f8/interior.jpg"}]
     },
@@ -32,7 +32,7 @@ let bbdd = [{
       "velocidad": "340",
       "aceleracion": "2.5",
       "potencia": "986",
-      "precio": 1000,
+      "precio": 254000,
       "sideImage": "../imagenes_bbdd/sf90_stradale/side.png",
       "images" : [{"img1":"../imagenes_bbdd/sf90_stradale/sf90_stradale.jpg", "img2":"../imagenes_bbdd/sf90_stradale/interior.jpg"}]
     },
@@ -171,7 +171,7 @@ let bbdd = [{
   "velocidad" : "262",
   "aceleracion" :"2.5",
   "potencia" : "1020",
-  "precio": 139990,
+  "precio": 100990,
   "sideImage": "",
   "images" : [{"img1":"", "img2":""}]
 },
