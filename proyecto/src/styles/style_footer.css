@@ -38,22 +38,19 @@
     max-height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    justify-content: space-between;
 }
 
 #padre_footer {
-
+    background-color: rgb(29, 102, 102);
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-evenly;
+
 }
 
 #logo_footer {
     display: flex;
-    max-height: 10%;
-    max-width: 10%;
+    height: 10%;
+    width: 10%;
     margin: 1%;
 }
 
@@ -70,22 +67,38 @@
     align-items: flex-start;
     justify-content: flex-start;
     
+    
     margin-left: 0;
 }
 .info_footer {
     color: white;
     width: 100%;
-    height: 5%;
+    height: 8%;
     display: flex;
     
 }
 
 .deep_footer #icons_footer {
-    width: 22%;
-    height: 20%;
+    background-color: rgb(85, 40, 24);
+    display: flex;
+    width: 60%;
+    height: 10%;
     color: white;
+    font-size: 16px;
+    gap: 240px;
+    flex-direction: row;
+    align-items: center;
+
+}
+.social_media {
+    background-color: rgb(128, 27, 44);
+    color: rgb(199, 77, 40);
+    width: 18%;
+    height: 6%;
     display: flex;
     align-items: center;
+    gap: 14px;
+    font-size: 20px;
 }
 
 li {
@@ -93,8 +106,78 @@ li {
 }
 
 #logos_footer {
-    background-color: rgb(129, 33, 33);
-    min-height: 100%;
-    width: 20%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    
+    height: 1%;
+    width: 26.2%;
+}
+p {
+    display: flex;
+}
+.marcas_como {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    /* background-color: green; */
+    color: white;
+    
+    font-size: 10px;
+    max-height: 10%;
+    width: 90%;
+    
+    
+    align-items: flex-start;
+}
+
+.deep_footer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; 
+}
+
+.marcas_logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    max-width: 100%;
+    height: 50%;
+}
+
+.marcas_footer {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    gap: 25px;
+}
+
+.marcas_footer img {
+    display: flex;
+    
+    height: 18%;
+    width: 14%;
+}
+
+.data_fiscal {
+/* background-color: rgb(32, 128, 96); */
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+max-width: 100%;
+gap: 30px;
+}
+
+.data_fiscal img {
+    
+    max-height: 100%;
+    max-width: 85%;
     
 }

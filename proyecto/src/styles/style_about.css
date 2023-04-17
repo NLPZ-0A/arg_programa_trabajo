@@ -37,7 +37,7 @@
     font-size: 20px;
 }
 
-  img {
+  .about__section img {
     height: 100%;
     max-width: 100%;
     width: 100%;
@@ -118,7 +118,7 @@
   font-size: 20px; 
   } 
   
-img { 
+.columna img { 
   height: 100%; 
   max-width: 100%; 
   width: 100%; 
