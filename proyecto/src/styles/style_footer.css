@@ -38,18 +38,16 @@
     max-height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    justify-content: space-between;
 }
 
-div#padre_footer {
-    display: flex;
-    flex-grow: 1;
-}
+#padre_footer {
 
-
-.padre_footer {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
 }
 
 #logo_footer {
@@ -67,8 +65,6 @@ div#padre_footer {
 
 
 .deep_footer #info_contenedor {
-
-    background-color: rgb(18, 59, 59);
     min-width: 100%;
     display: flex;
     align-items: flex-start;
@@ -85,12 +81,11 @@ div#padre_footer {
 }
 
 .deep_footer #icons_footer {
-    background-color: rgb(102, 75, 26);
-    width: 55%;
+    width: 22%;
     height: 20%;
     color: white;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 li {
