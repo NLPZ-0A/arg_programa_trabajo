@@ -45,8 +45,8 @@ let bbdd = [{
       "aceleracion": "2.9",
       "potencia": "819",
       "precio": 580000,
-      "sideImage": "../imagenes_bbdd/812competizione/side.png",
-      "images" : [{"img1":"../imagenes_bbdd/812competizione/812competizione.jpg", "img2":"../imagenes_bbdd/812competizione/interior.jpg"}]
+      "sideImage": "../imagenes_bbdd/competizione812/side.png",
+      "images" : [{"img1":"../imagenes_bbdd/competizione812/competizione_812.jpg", "img2":"../imagenes_bbdd/competizione812/interior.jpg"}]
     },
     { "id": 'ferrari_4',
       "marca": "Ferrari",
