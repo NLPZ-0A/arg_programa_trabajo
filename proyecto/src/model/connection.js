@@ -158,9 +158,9 @@ let bbdd = [{
   "velocidad" : "322",
   "aceleracion" :"1.98",
   "potencia" : "1020",
-  "precio": 149990,
-  "sideImage": "",
-  "images" : [{"img1":"", "img2":""}]
+  "precio": 89990,
+  "sideImage": "../imagenes_bbdd/tesla-s-plaid/side.png",
+  "images" : [{"img1":"../imagenes_bbdd/tesla-s-plaid/tesla-s-plaid.jpg", "img2":"../imagenes_bbdd/tesla-s-plaid/tesla-s-interior.jpg"}]
 },
 {
   "id": "tesla_2",
@@ -171,9 +171,9 @@ let bbdd = [{
   "velocidad" : "262",
   "aceleracion" :"2.5",
   "potencia" : "1020",
-  "precio": 100990,
-  "sideImage": "",
-  "images" : [{"img1":"", "img2":""}]
+  "precio": 98990,
+  "sideImage": "../imagenes_bbdd/model-x-plaid/side.png",
+  "images" : [{"img1":"../imagenes_bbdd/model-x-plaid/model-x-plaid.jpg", "img2":"../imagenes_bbdd/model-x-plaid/interior.jpg"}]
 },
 {
   "id": "tesla_3",
@@ -185,8 +185,8 @@ let bbdd = [{
   "aceleracion" :"3.3",
   "potencia" : "450",
   "precio": 69990,
-  "sideImage": "",
-  "images" : [{"img1":"", "img2":""}]
+  "sideImage": "../imagenes_bbdd/model-3/side.png",
+  "images" : [{"img1":"../imagenes_bbdd/model-3/model3.jpg", "img2":"../imagenes_bbdd/model-3/interior.jpg"}]
 },
   ]
 }]

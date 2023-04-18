@@ -13,10 +13,25 @@
     color: #252525;
     font-weight: 400;
 }
-
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     .cars__model-view{
-        height: 140vh;
+        height: 150vh;
     }
 
 }
+
+@media (max-width: 1000px) {
+    .cars__model-view{
+        height: 180vh;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .cars__model-view{
+        height: 200vh;
+    }
+
+}
+
+

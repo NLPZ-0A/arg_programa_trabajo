@@ -34,24 +34,24 @@
 .deep_footer {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
-    max-height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    background-color:rgb(34, 33, 33);
+    height: 30%;
 }
 
 #padre_footer {
-    background-color: rgb(29, 102, 102);
     display: flex;
     flex-direction: column;
-
+    flex-grow: 1;
+    justify-content: center;
+    
 }
 
 #logo_footer {
     display: flex;
-    height: 10%;
-    width: 10%;
-    margin: 1%;
+    max-width: 100%;
+    margin: 1.5%;
 }
 
 #logo_footer img {
@@ -67,19 +67,17 @@
     align-items: flex-start;
     justify-content: flex-start;
     
-    
+    margin-bottom: 30px;
     margin-left: 0;
 }
 .info_footer {
     color: white;
     width: 100%;
-    height: 8%;
     display: flex;
     
 }
 
 .deep_footer #icons_footer {
-    background-color: rgb(85, 40, 24);
     display: flex;
     width: 60%;
     height: 10%;
@@ -91,14 +89,12 @@
 
 }
 .social_media {
-    background-color: rgb(128, 27, 44);
-    color: rgb(199, 77, 40);
-    width: 18%;
-    height: 6%;
     display: flex;
     align-items: center;
-    gap: 14px;
-    font-size: 20px;
+    color: white;
+    margin-top:10px;
+    font-size: 25px;
+    gap: 10px;
 }
 
 li {
@@ -106,29 +102,24 @@ li {
 }
 
 #logos_footer {
-    /* background-color: brown; */
     display: flex;
     flex-direction: column;
-    
-    height: 1%;
+    max-height: 100%;
     width: 26.2%;
 }
+
 p {
     display: flex;
 }
+
+
 .marcas_como {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
-    /* background-color: green; */
     color: white;
-    
-    font-size: 10px;
-    max-height: 10%;
-    width: 90%;
-    
-    
-    align-items: flex-start;
+    font-size: 16px;
+    margin-left: 30px;
 }
 
 .deep_footer img {
@@ -141,43 +132,47 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
     max-width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 .marcas_footer {
-    /* background-color: blue; */
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: 100%;
     gap: 25px;
 }
 
 .marcas_footer img {
     display: flex;
-    
-    height: 18%;
-    width: 14%;
+    object-fit: cover;
+    width: 15%;
 }
 
 .data_fiscal {
-/* background-color: rgb(32, 128, 96); */
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
-max-width: 100%;
-gap: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    max-width: 100%;
+    gap: 30px;
 }
 
-.data_fiscal img {
-    
-    max-height: 100%;
-    max-width: 85%;
-    
+.seguinos{
+    width: 60%;
+    justify-content: center;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(34, 33, 33);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color : white;
 }
