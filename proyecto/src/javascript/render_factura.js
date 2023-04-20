@@ -26,7 +26,7 @@ $( document ).ready(function() {
     let nameUser = `${personalData.nombre} ${personalData.apellido}`;
     let location = `${personalData.localidad} ${personalData.direccion} ${personalData.codPostal}`;
     let email = personalData.email;
-
+    console.log(location);
 
     $('#nombrePersona').html(nameUser);
     $('#direccion').html(location);
@@ -48,7 +48,6 @@ $( document ).ready(function() {
     saveButton.addEventListener('click', () => {
         window.print();
     });
-
 
 
     function searchCardById (id_card){
