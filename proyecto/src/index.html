@@ -114,7 +114,7 @@
             <div class="overlay__text">
                     <h2>AT THE REACH OF YOUR HAND</h2>
         
-                    <h1 style="color: ">The car you need!</h1>   
+                    <h1>The car you need!</h1>   
             </div>
         </section>
         
@@ -335,7 +335,9 @@
         </section>
 
         <section class="form-popup hidden">
-            <form  class="form-step-general">
+          
+              <form  class="form-step-general">
+                <div><button id="close"><i class='bx bx-x'></i></button></div>
                 <h1 class="text-center">Formulario preventa</h1>
                 <!-- barra progreso -->
                 <div class="progressbar">
@@ -354,11 +356,11 @@
                 <div class="form-step form-step-active">
                   <div class="input-group">
                     <label for="Nombre">Nombre</label>
-                    <input type="text" name="Nombre" id="nombre" required>
+                    <input type="text" name="Nombre" id="nombre" placeholder="ej: Leandro" required>
                   </div>
                   <div class="input-group">
                     <label for="Apellido">Apellido</label>
-                    <input type="text" name="Apellido" id="apellido" required>
+                    <input type="text" name="Apellido" id="apellido" placeholder="ej: Gomez" required>
                   </div>
                   <div class="">
                     <button class="btn btn-next width-50 ml-auto">siguiente</button>
@@ -367,11 +369,11 @@
                 <div class="form-step">
                   <div class="input-group">
                     <label for="Telefono">Teléfono</label>
-                    <input type="number" name="Telefono" id="telefono" required>
+                    <input type="number" name="Telefono" id="telefono"  placeholder="ej: 1126547643" required>
                   </div>
                   <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email"  placeholder="ej: jhondoe@hotmail.com" required>
                   </div>
                   <div class="btns-group">
                     <button class="btn btn-prev">Anterior</button>
@@ -385,7 +387,7 @@
                   </div>
                   <div class="input-group">
                     <label for="DNI">DNI</label>
-                    <input type="number" name="DNI" id="DNI" required>
+                    <input type="number" name="DNI" id="DNI" placeholder="ej:23422123" required>
                   </div>
                   <div class="btns-group">
                     <button class="btn btn-prev">Anterior</button>
@@ -395,11 +397,11 @@
                 <div class="form-step">
                   <div class="input-group">
                     <label for="direccion">Dirección</label>
-                    <input type="text" name="direccion" id="direccion" required>
+                    <input type="text" name="direccion" id="direccion" placeholder="ej: av.San Martin" required>
                   </div>
                   <div class="input-group">
                     <label for="location">Localidad</label>
-                    <input type="text" name="location" id="location" required>
+                    <input type="text" name="location" id="location" placeholder="ej: av.San Martin" required>
                   </div>
                   <div class="input-group">
                     <label for="codigoPostal">Código postal</label>
@@ -407,7 +409,7 @@
                       type="text"
                       name="codigoPostal"
                       id="codigoPostal"
-                    />
+                      placeholder="ej: 1456">
                   </div>
                   <div class="btns-group">
                     <button class="btn btn-prev">Anterior</button>
@@ -415,7 +417,11 @@
                   </div>
                 </div>
               </form>
+           
         </section>
+        <div class="overlay hidden">
+
+        </div>
 
     </main>
 

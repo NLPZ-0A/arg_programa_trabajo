@@ -6,10 +6,12 @@ let dataGenerate = {};
 buttonGenerate.addEventListener('click', (e) =>{
     e.preventDefault();
     generateInfo();
+});
 
-
-   
-} );
+closeBtn.addEventListener('click', ()=>{
+    popupWizard.classList.toggle("hidden");
+    overlay.classList.toggle("hidden");
+});
 
 const generateInfo = ()=> {
 
@@ -33,6 +35,8 @@ const generateInfo = ()=> {
 
     form_general.reset();
     popupWizard.classList.toggle("hidden");
+    overlay.classList.toggle("hidden");
 
     window.open('./views/factura.html');
 }
+

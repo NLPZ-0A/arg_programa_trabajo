@@ -1,6 +1,7 @@
 
 const prevBtns = document.querySelectorAll(".btn-prev");
 const nextBtns = document.querySelectorAll(".btn-next");
+const closeBtn = document.querySelector('#close');
 const progress = document.getElementById("progress");
 const formSteps = document.querySelectorAll(".form-step");
 const currentStep = document.querySelector(".form-step-active");
