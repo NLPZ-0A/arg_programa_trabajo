@@ -20,9 +20,9 @@ const generateInfo = ()=> {
         email : $('#email').val(),
         fdn : $('#fdn').val(),
         DNI : $('#DNI').val(),
-        direccion : $('#direccion'),
-        localidad : $('#location'),
-        codPostal : $('#codigoPostal')
+        direccion : $('#direccion').val(),
+        localidad : $('#location').val(),
+        codPostal : $('#codigoPostal').val()
     }
 
     if(localStorage.getItem('personal_data')){
