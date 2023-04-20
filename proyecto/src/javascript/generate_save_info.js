@@ -37,6 +37,9 @@ const generateInfo = ()=> {
     form_general.reset();
     popupWizard.classList.toggle("hidden");
     overlay.classList.toggle("hidden");
+    formStepsNum = 0;
+    updateFormSteps();
+    updateProgressbar();
 
     window.open('./views/factura.html');
 }
