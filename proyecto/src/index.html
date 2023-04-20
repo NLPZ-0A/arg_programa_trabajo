@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
 
      <!-----------------------------ICONS BOXICONS------------------------------->
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -21,7 +23,7 @@
      <!---------------------------------STYLES----------------------------------------->
     <link rel="stylesheet" href="./styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="./styles/style_welcome_section.css" type="text/css">
-    <link rel="stylesheet" href="./styles/syle_social_nav.css" type="text/css" >
+    <link rel="stylesheet" href="./styles/style_social_nav.css" type="text/css" >
     <link rel="stylesheet" href="./styles/style_navbar.css" type="text/css" >
     <link rel="stylesheet" href="./styles/style_navbar_responsive.css" media="(max-width: 1000px)">
     <link rel="stylesheet" href="./styles/style_cars_models.css" type="text/css">
@@ -30,15 +32,24 @@
     <link rel="stylesheet" href="./styles/style_card_properties.css" type="text/css">
     <link rel="stylesheet" href="./styles/style_about.css" type="text/css">
     <link rel="stylesheet" href="./styles/style_footer.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style_form_wizard.css" type="text/css">
+   
 
     <!------------------------------------SCRIPTS-------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="../animateScroll/animatescroll.js-master/animatescroll.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
     <!-----------------------------MVC------------------------------------->
     <script src="./model/connection.js" defer></script>
 
     <script src="./javascript/view_controller.js" defer></script>
-
+    <script src="./javascript/index.js" defer></script>
     <script src="./javascript/carrousel_controller.js" defer></script>
+    <script src="./javascript/animateScrollController.js" defer></script>
+    <script src="./javascript/navbar_animate.js" defer></script>
+    <script src="./javascript/wizard_form_controller.js" defer></script>
+    <script src="./javascript/generate_save_info.js" defer></script>
 </head>
 
 <body>
@@ -55,10 +66,10 @@
             </div>
 
             <ul class="navbar__list">
-                <li class="navbar__item"><a href="#"><i class='bx bx-home'></i></a></li>
-                <li class="navbar__item"><a href="#"><i class='bx bxs-car'></i></a></li>
-                <li class="navbar__item"><a href="#"><i class='bx bx-id-card'></i></a></li>
-                <li class="navbar__item"><a href="#"><i class='bx bx-info-square' ></i></a></li>
+                <li class="navbar__item" id="home_button"><a href="#"><i class='bx bx-home'></i></a></li>
+                <li class="navbar__item" id="car_button"><a href="#"><i class='bx bxs-car'></i></a></li>
+                <li class="navbar__item" id="about_button" ><a href="#"><i class='bx bx-id-card'></i></a></li>
+                <li class="navbar__item" id="footer_button" ><a href="#"><i class='bx bx-info-square' ></i></a></li>
             </ul>
 
             <button class="navbar__toggle grid">
@@ -67,6 +78,10 @@
                 </span>
             </button>
         </nav>
+
+        <button class="navbar-menu-button hidden" id="toggle-navbar-btn-menu">
+            <span><i class='bx bxs-right-arrow'></i></span>
+        </button>
 
         <nav class="social__navbar social"> 
             
@@ -99,7 +114,7 @@
             <div class="overlay__text">
                     <h2>AT THE REACH OF YOUR HAND</h2>
         
-                    <h1>The car you need!</h1>   
+                    <h1 style="color: ">The car you need!</h1>   
             </div>
         </section>
         
@@ -217,7 +232,7 @@
                         </div>
 
                         <div class="button__container">
-                            <button class="button__view_more">ver mas</button>
+                            <button class="button__view_more">Facturar</button>
                         </div>
                     </div>
 
@@ -230,12 +245,6 @@
                                 <img src="../images/interior.jpg" alt="">
                             </div>
                         </div>
-
-                        <!--<div class="images__car">
-                            <div class="image__car_container last">
-                                <img src="../images/ModelS.png" alt="">
-                            </div>
-                        </div>-->
 
                     </div>
             </div>
@@ -323,6 +332,89 @@
                  </div> 
             
             
+        </section>
+
+        <section class="form-popup hidden">
+            <form  class="form-step-general">
+                <h1 class="text-center">Formulario preventa</h1>
+                <!-- barra progreso -->
+                <div class="progressbar">
+                  <div class="progress" id="progress"></div>
+                  
+                  <div
+                    class="progress-step progress-step-active"
+                    data-title="Intro"
+                  ></div>
+                  <div class="progress-step" data-title="Contacto"></div>
+                  <div class="progress-step" data-title="Identificación"></div>
+                  <div class="progress-step" data-title="Localidad"></div>
+                </div>
+          
+                <!-- pasos -->
+                <div class="form-step form-step-active">
+                  <div class="input-group">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="Nombre" id="nombre" required>
+                  </div>
+                  <div class="input-group">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" name="Apellido" id="apellido" required>
+                  </div>
+                  <div class="">
+                    <button class="btn btn-next width-50 ml-auto">siguiente</button>
+                  </div>
+                </div>
+                <div class="form-step">
+                  <div class="input-group">
+                    <label for="Telefono">Teléfono</label>
+                    <input type="number" name="Telefono" id="telefono" required>
+                  </div>
+                  <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                  </div>
+                  <div class="btns-group">
+                    <button class="btn btn-prev">Anterior</button>
+                    <button class="btn btn-next">Siguiente</button>
+                  </div>
+                </div>
+                <div class="form-step">
+                  <div class="input-group">
+                    <label for="fdn">Fecha de nacimiento</label>
+                    <input type="date" name="fdn" id="fdn" required>
+                  </div>
+                  <div class="input-group">
+                    <label for="DNI">DNI</label>
+                    <input type="number" name="DNI" id="DNI" required>
+                  </div>
+                  <div class="btns-group">
+                    <button class="btn btn-prev">Anterior</button>
+                    <button class="btn btn-next">Siguiente</button>
+                  </div>
+                </div>
+                <div class="form-step">
+                  <div class="input-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion" required>
+                  </div>
+                  <div class="input-group">
+                    <label for="location">Localidad</label>
+                    <input type="text" name="location" id="location" required>
+                  </div>
+                  <div class="input-group">
+                    <label for="codigoPostal">Código postal</label>
+                    <input
+                      type="text"
+                      name="codigoPostal"
+                      id="codigoPostal"
+                    />
+                  </div>
+                  <div class="btns-group">
+                    <button class="btn btn-prev">Anterior</button>
+                    <button type="button" class="btn btn-generate">Generar</button>
+                  </div>
+                </div>
+              </form>
         </section>
 
     </main>

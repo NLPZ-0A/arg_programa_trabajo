@@ -75,12 +75,24 @@
     }
      .cars__model-form{
        max-width: 100%;
+       align-items: flex-start;
+       flex-direction: column;
+       margin: 0;
      }
+
+     .label__input{
+        margin: 20px;
+     }
+
   }
 
   @media (max-width: 900px) {
     .label__input{
-        margin: 0;
+        margin: 20px;
+    }
+    
+    .counts__cars-models{
+        display: none;
     }
 
     .cars__model-form{
@@ -96,6 +108,11 @@
     }
     .input_nav_cars{
         display: flex;
+    }
+
+    .input__car-models{
+        margin: 30px;
+        margin-left: 0;
     }
 
     .counts__cars-models{

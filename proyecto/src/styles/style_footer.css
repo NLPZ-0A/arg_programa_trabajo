@@ -176,3 +176,37 @@ p {
     font-weight: 300;
     color : white;
 }
+
+
+@media (max-width: 1000px) {
+    .marcas_footer{
+        display: none;
+    }
+
+    .marcas_como{
+        display: none;
+    }
+
+    #logo_footer{
+        max-width: 50%;
+      }
+
+   
+}
+
+@media (max-width: 900px) {
+  
+    #logo_footer{
+      display: none;
+    }
+
+    div.data_fiscal{
+        display: none;
+    }
+
+    #info_contenedor{
+        flex-direction: column;
+        padding: 30px;
+    }
+   
+}

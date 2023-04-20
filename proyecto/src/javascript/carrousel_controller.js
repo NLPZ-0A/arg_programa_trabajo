@@ -60,6 +60,12 @@ const setCurrentCard = () => {
 //usamos la delegación de eventos para evitar el binding de eventos para N numero de elementos
 $('.carousel__cards').on('click', '.card', function() {
     let id_card = $(this).data('id');
+
+    if(localStorage.getItem('id_car')){
+       localStorage.removeItem('id_car')
+    }
+
+    let id_memory = localStorage.setItem('id_car', id_card);
    
     //quitamos o ponemos la clase selected a la card que toquemos
     this.classList.toggle('selected');

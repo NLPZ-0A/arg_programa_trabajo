@@ -1,5 +1,7 @@
 .navbar{
-    position: absolute;
+    position: fixed;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
     top: 0;
     left: 0;
     height: 100%;
@@ -13,6 +15,53 @@
     width: 88px;
     background-color: rgba(0, 0, 0, 0.26);
     backdrop-filter: blur(10px);
+    padding: 0;
+}
+
+.navbar.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#toggle-navbar-btn-menu{
+    position: fixed;
+    opacity: 1;
+    top: 50%;
+    left: 2%;
+    z-index: 999999;
+    color:white;
+    mix-blend-mode:difference;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .navbar-menu-button{
+    animation: pulse 0.8s infinite;
+    animation-delay: 0.5s;
+  }
+
+  .navbar-menu-button.paused{
+    animation-play-state:paused;
+  }
+
+  .navbar-menu-button:hover {
+    animation-play-state:paused;
+  }
+
+
+.navbar-menu-button.hidden{
+    opacity: 0;
+    display: none;
 }
 
 .navbar__list {
