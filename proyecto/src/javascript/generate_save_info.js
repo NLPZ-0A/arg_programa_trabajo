@@ -12,6 +12,9 @@ closeBtn.addEventListener('click', ()=>{
     popupWizard.classList.toggle("hidden");
     overlay.classList.toggle("hidden");
     form_general.reset();
+    formStepsNum = 0;
+    updateFormSteps();
+    updateProgressbar();
 });
 
 const generateInfo = ()=> {
