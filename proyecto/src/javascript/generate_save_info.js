@@ -11,6 +11,7 @@ buttonGenerate.addEventListener('click', (e) =>{
 closeBtn.addEventListener('click', ()=>{
     popupWizard.classList.toggle("hidden");
     overlay.classList.toggle("hidden");
+    form_general.reset();
 });
 
 const generateInfo = ()=> {
